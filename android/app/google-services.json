@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "293477612420",
+    "project_id": "icanto-c57bd",
+    "storage_bucket": "icanto-c57bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293477612420:android:4a424b002dd53d79a0fbd1",
+        "android_client_info": {
+          "package_name": "com.example.ican_to"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcCLBnUZ66BpInGUV5lvtH3QQFntgGFB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
