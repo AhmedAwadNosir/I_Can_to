@@ -13,4 +13,18 @@ abstract class AppImages {
       "lib/core/utils/assets/images/PasswordSuccesfullyIlustration.svg";
   static const String successaccount =
       "lib/core/utils/assets/images/SuccessAccountIlustration.svg";
+  static const String homeAppLogo =
+      "lib/core/utils/assets/images/logo2copy5.png";
+  static const String appimage1 = "lib/core/utils/assets/images/image1.png";
+  static const String updown = "lib/core/utils/assets/images/up-down.png";
+  static const String logo2copy1 =
+      "lib/core/utils/assets/images/logo2copy1.png";
+  static const String heartIcon =
+      "lib/core/utils/assets/images/heart-icon-y1k1.png";
+  static const String emptyListImage =
+      "lib/core/utils/assets/images/emptyfavlist.png";
+  static const String uploadIcon =
+      "lib/core/utils/assets/images/upload-icon.png";
+  static const String profileBackgroun =
+      "lib/core/utils/assets/images/profileBackgroun1.jpg";
 }

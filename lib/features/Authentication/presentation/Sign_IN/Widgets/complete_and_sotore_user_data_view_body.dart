@@ -255,14 +255,15 @@ class _CompleteAndStorUserDataViewBodyState
                                       .storeUserDatac(
                                           credential: widget.credential,
                                           userModal: UserModel(
-                                              userName:
-                                                  userData?.displayName ?? "",
-                                              email: userData?.email ?? "",
-                                              userPhoto:
-                                                  userData?.photoURL ?? '',
-                                              country: userCountry,
-                                              gender: selectedGender,
-                                              birthdate: birthdate));
+                                            userName:
+                                                userData?.displayName ?? "",
+                                            email: userData?.email ?? "",
+                                            userPhoto: userData?.photoURL ?? '',
+                                            country: userCountry,
+                                            gender: selectedGender,
+                                            birthdate: birthdate,
+                                            bio: bioControler.text,
+                                          ));
                                 } else {
                                   showSnackBar(
                                       "please Enter Your BirthDate", context);

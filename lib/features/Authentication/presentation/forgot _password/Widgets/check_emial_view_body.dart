@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ican_to/core/utils/app_images.dart';
 import 'package:ican_to/core/widgets/custom_state_page.dart';
+import 'package:ican_to/features/Authentication/presentation/forgot%20_password/functions/open_gmail_app.dart';
+import 'package:ican_to/features/Authentication/presentation/forgot%20_password/views/password_reset_successfully_view.dart';
 import 'package:ican_to/features/Authentication/presentation/forgot%20_password/views/reset_password_view.dart';
 import 'package:ican_to/features/Onboarding/presentation/Widgets/custom_button.dart';
 
@@ -26,9 +28,9 @@ class CheckEmialViewBody extends StatelessWidget {
           const Spacer(),
           CustomButton(
               onPressed: () async {
-                //this function open email messages on your app
-                // await openGmail();
-                Navigator.pushNamed(context, ResetPasswordView.id);
+                // this function open email messages on your app
+                await openGmail();
+                Navigator.pushNamed(context, PasswordResetSuccessfullyView.id);
               },
               buttonName: "Open email app"),
           const SizedBox(

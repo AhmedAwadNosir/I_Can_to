@@ -8,15 +8,18 @@ class UserModel {
   String? gender;
   String? country;
   String? birthdate;
+  String? bio;
 
-  UserModel(
-      {this.userName,
-      this.email,
-      this.userPhoto,
-      this.userCredential,
-      this.gender,
-      this.country,
-      this.birthdate});
+  UserModel({
+    this.userName,
+    this.email,
+    this.userPhoto,
+    this.userCredential,
+    this.gender,
+    this.country,
+    this.birthdate,
+    this.bio,
+  });
 
   factory UserModel.fromjson(Map<String, dynamic> json) => UserModel(
         userName: json["userName"],
@@ -25,14 +28,16 @@ class UserModel {
         gender: json["gender"] ?? '',
         country: json["country"] ?? '',
         birthdate: json["birthdate"] ?? '',
+        bio: json["bio"] ?? '',
       );
 
   Map<String, dynamic> tojson() => {
         "userName": userName ?? userCredential!.user!.displayName,
-        "email": email ?? userCredential!.user!.email,
+        "email": email ?? userCredential?.user?.email,
         "userPhoto": userPhoto ?? userCredential!.user!.photoURL,
         "gender": gender ?? '',
         "country": country ?? '',
         "birthdate": birthdate ?? '',
+        "bio": bio ?? '',
       };
 }

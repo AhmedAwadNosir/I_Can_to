@@ -4,7 +4,6 @@ import 'package:ican_to/features/Authentication/functions/show_snack_bar.dart';
 import 'package:ican_to/features/Authentication/presentation/Create_Account/Views/sucess_account_ilstration.dart';
 import 'package:ican_to/features/Authentication/presentation/Create_Account/Widgets/register_view_body.dart';
 import 'package:ican_to/features/Authentication/states_manager/Cubits/Register/register_cubit.dart';
-import 'package:ican_to/features/Authentication/states_manager/Cubits/registerApi/register_api_cubit.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class RegisterViewBodyBlocConsumer extends StatelessWidget {

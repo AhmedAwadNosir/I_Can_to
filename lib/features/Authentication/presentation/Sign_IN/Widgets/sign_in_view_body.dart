@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ican_to/core/utils/app_colors.dart';
+import 'package:ican_to/core/utils/app_fonts_styles.dart';
+import 'package:ican_to/core/utils/app_images.dart';
 import 'package:ican_to/features/Authentication/presentation/Create_Account/Views/register_view.dart';
+import 'package:ican_to/features/Authentication/presentation/Widgets/custom_authentication_option_styls.dart';
 import 'package:ican_to/features/Authentication/presentation/Widgets/custom_authentication_options.dart';
 import 'package:ican_to/features/Authentication/presentation/Widgets/custom_text_field.dart';
 import 'package:ican_to/features/Authentication/presentation/Widgets/page_initail_info.dart';
@@ -101,7 +104,7 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                 UserInstractions(
                   userDestenation: "Register",
                   onTap: () {
-                    Navigator.pushReplacementNamed(context, RegisterView.id);
+                    Navigator.pushNamed(context, RegisterView.id);
                   },
                   userQution: "Dont’t have an account?",
                 ),
@@ -134,17 +137,17 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                 const SizedBox(
                   height: 20,
                 ),
-                const UserAuthOptions(operationOption: "Or Login With Account"),
+                Text("Or Login With Account",
+                    style: AppFontsStyles.textstyle14
+                        .copyWith(color: AppColors.appNeutralColors500)),
                 const SizedBox(height: 24),
-                CustomAuthinticationOptions(
-                  site1OnTap: () async {
+                CustomAuthenticationOptionStyle(
+                  siteIcon: AppImages.googleIcon,
+                  siteName: "Sign in with Google",
+                  onTap: () async {
                     await BlocProvider.of<SignInCubit>(context).signInGoogle();
                   },
-                  site2OnTap: () async {
-                    // await BlocProvider.of<SignInCubit>(context)
-                    //     .signInFacebook();
-                  },
-                ),
+                )
               ],
             ),
           ),

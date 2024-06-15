@@ -7,12 +7,10 @@ import 'package:ican_to/core/utils/app_colors.dart';
 import 'package:ican_to/core/utils/app_fonts_styles.dart';
 import 'package:ican_to/features/Authentication/data/Models/user_data_model.dart';
 import 'package:ican_to/features/Authentication/functions/show_snack_bar.dart';
-import 'package:ican_to/features/Authentication/presentation/Create_Account/Views/sucess_account_ilstration.dart';
 import 'package:ican_to/features/Authentication/presentation/Sign_IN/Views/sign_in_view.dart';
 import 'package:ican_to/features/Authentication/presentation/Widgets/page_initail_info.dart';
 import 'package:ican_to/features/Authentication/presentation/Widgets/user_instractions.dart';
 import 'package:ican_to/features/Authentication/states_manager/Cubits/Register/register_cubit.dart';
-import 'package:ican_to/features/Authentication/states_manager/Cubits/registerApi/register_api_cubit.dart';
 import 'package:ican_to/features/Onboarding/presentation/Widgets/custom_button.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../Widgets/custom_text_field.dart';
@@ -40,7 +38,6 @@ class _RegisterViewBodyState extends State<RegisterViewBody> {
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   @override
   Widget build(BuildContext context) {
-    final screenHight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
@@ -247,14 +244,16 @@ class _RegisterViewBodyState extends State<RegisterViewBody> {
                       BlocProvider.of<RegisterCubit>(context)
                           .registerWithEmailAndPassword(
                         userModel: UserModel(
-                            userName: userNameData.trim(),
-                            email: emialData,
-                            birthdate: birthdate,
-                            country: userCountry,
-                            gender: selectedGender,
-                            userPhoto: selectedGender == "male"
-                                ? "https://firebasestorage.googleapis.com/v0/b/icanto-c57bd.appspot.com/o/user_profile_defult_photo%2Fp2.jpg?alt=media&token=f08cfd65-67b0-45bb-b831-94c972b6f871"
-                                : "https://firebasestorage.googleapis.com/v0/b/icanto-c57bd.appspot.com/o/user_profile_defult_photo%2Fp1.jpg?alt=media&token=c00f4a8f-f649-48ec-bb69-9c3e09f62722"),
+                          userName: userNameData.trim(),
+                          email: emialData,
+                          birthdate: birthdate,
+                          country: userCountry,
+                          gender: selectedGender,
+                          userPhoto: selectedGender == "male"
+                              ? "https://firebasestorage.googleapis.com/v0/b/icanto-c57bd.appspot.com/o/user_profile_defult_photo%2Fp2.jpg?alt=media&token=f08cfd65-67b0-45bb-b831-94c972b6f871"
+                              : "https://firebasestorage.googleapis.com/v0/b/icanto-c57bd.appspot.com/o/user_profile_defult_photo%2Fp1.jpg?alt=media&token=c00f4a8f-f649-48ec-bb69-9c3e09f62722",
+                          bio: "hello i use Ican to its amazing app",
+                        ),
                         password: passwordData,
                       );
                     } else {

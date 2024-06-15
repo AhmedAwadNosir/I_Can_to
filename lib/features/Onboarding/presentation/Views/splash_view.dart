@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ican_to/core/Utils/app_images.dart';
 import 'package:ican_to/features/Authentication/presentation/Sign_IN/Views/sign_in_view.dart';
-import 'package:ican_to/features/Home/presentation/views/home_view.dart';
+import 'package:ican_to/features/Home/views/home_view.dart';
 import 'package:ican_to/features/Onboarding/presentation/Views/onboarding_view.dart';
 import 'package:ican_to/main.dart';
 import '../../functions/splash_navigation_controler.dart';

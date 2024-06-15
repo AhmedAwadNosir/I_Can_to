@@ -20,26 +20,31 @@ class CustomAuthenticationOptionStyle extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-          height: 46,
-          width: 154,
+          height: 50,
+          padding: EdgeInsets.all(10),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
+            color: Colors.black,
+            borderRadius: BorderRadius.circular(50),
             border: Border.all(
-              color: AppColors.appNeutralColors300,
+              color: Colors.black,
             ),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SvgPicture.asset(siteIcon),
+              SizedBox(
+                  height: 25,
+                  width: 25,
+                  child: SvgPicture.asset(
+                    siteIcon,
+                  )),
               const SizedBox(
                 width: 8,
               ),
               Text(
                 siteName,
-                style: AppFontsStyles.textstyle14.copyWith(
-                    fontFamily: textFamilyMedium,
-                    color: const Color(0xff363F5E)),
+                style: AppFontsStyles.textstyle20.copyWith(
+                    fontFamily: textFamilyMedium, color: Colors.white),
               )
             ],
           )),

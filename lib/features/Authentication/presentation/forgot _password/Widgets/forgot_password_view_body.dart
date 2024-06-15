@@ -79,8 +79,8 @@ class _ForgotPasswordViewBodyState extends State<ForgotPasswordViewBody> {
                   if (formkey.currentState!.validate()) {
                     formkey.currentState!.save();
                     //firebase reset pasword option
-                    // await sendResetPasswordEmail(email: email);
-                    Navigator.pushNamed(context, CheckEmialView.id);
+                    await sendResetPasswordEmail(
+                        email: email, context: context);
                   } else {
                     setState(() {
                       autovalidateMode = AutovalidateMode.always;
