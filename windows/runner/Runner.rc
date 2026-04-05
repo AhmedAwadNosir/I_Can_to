@@ -93,7 +93,11 @@ BEGIN
             VALUE "FileDescription", "ican_to" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "ican_to" "\0"
+<<<<<<< HEAD
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
+=======
+            VALUE "LegalCopyright", "Copyright (C) 2026 com.example. All rights reserved." "\0"
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
             VALUE "OriginalFilename", "ican_to.exe" "\0"
             VALUE "ProductName", "ican_to" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"

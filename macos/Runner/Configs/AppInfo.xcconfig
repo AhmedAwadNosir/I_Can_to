@@ -11,4 +11,8 @@ PRODUCT_NAME = ican_to
 PRODUCT_BUNDLE_IDENTIFIER = com.example.icanTo
 
 // The copyright displayed in application information
+<<<<<<< HEAD
 PRODUCT_COPYRIGHT = Copyright © 2024 com.example. All rights reserved.
+=======
+PRODUCT_COPYRIGHT = Copyright © 2026 com.example. All rights reserved.
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)

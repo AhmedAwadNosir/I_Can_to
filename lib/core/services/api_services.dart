@@ -1,21 +1,16 @@
-
+import 'dart:developer';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 class ApiServices {
-  final String _baseUrl = 'https://project2.amit-learning.com/api';
+  final String _baseUrl =
+      'https://exudative-auriform-alphonse.ngrok-free.dev/upload';
   final Dio dio;
 
   ApiServices({required this.dio});
 
-  Future<Map<String, dynamic>> get(
-      {required String endPoint, String? token}) async {
+  Future<Map<String, dynamic>> get({required String endPoint}) async {
     Map<String, String> headers = {};
-    if (token != null) {
-      headers.addAll({
-        "Authorization": "Bearer $token",
-      });
-    }
     var response =
         await dio.get("$_baseUrl$endPoint", options: Options(headers: headers));
     return response.data;
@@ -26,17 +21,13 @@ class ApiServices {
     String? token,
     @required dynamic body,
   }) async {
-    Map<String, String> headers = {};
-    if (token != null) {
-      headers.addAll({
-        "Authorization": "Bearer $token",
-      });
-    }
+    Map<String, String> headers = {'Content-Type': 'multipart/form-data'};
     var response = await dio.post("$_baseUrl$endPoint",
-        options: Options(
-          headers: headers,
-        ),
+        // options: Options(
+        //   headers: headers,
+        // ),
         data: body);
+    log(response.data.toString());
     return response.data;
   }
 

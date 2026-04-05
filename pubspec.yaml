@@ -42,9 +42,18 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^8.1.5
   flutter_facebook_auth: ^7.0.0
+<<<<<<< HEAD
   flutter_svg: ^2.0.10+1
   get_it: ^7.7.0
   google_sign_in: ^6.2.1
+=======
+  flutter_inappwebview: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_svg: ^2.0.10+1
+  get_it: ^7.7.0
+  google_sign_in: ^6.2.1
+  http: ^1.2.1
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
   iconsax: ^0.0.8
   image: ^4.2.0
   image_picker: ^1.1.2
@@ -52,11 +61,22 @@ dependencies:
   shared_preferences: ^2.2.3
   smooth_page_indicator: ^1.1.0
   url_launcher: ^6.2.6
+<<<<<<< HEAD
+=======
+  webview_flutter: ^4.8.0
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 
 dev_dependencies:
   flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
+<<<<<<< HEAD
+=======
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "lib/core/utils/assets/images/appLogo.png"
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

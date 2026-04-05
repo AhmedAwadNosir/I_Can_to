@@ -63,6 +63,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '293477612420',
     projectId: 'icanto-c57bd',
     storageBucket: 'icanto-c57bd.appspot.com',
+    androidClientId:
+        '293477612420-22ip8v1q5jnnou8i7pe4kb71ln2erqnt.apps.googleusercontent.com',
     iosBundleId: 'com.example.icanTo',
   );
 
@@ -72,6 +74,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '293477612420',
     projectId: 'icanto-c57bd',
     storageBucket: 'icanto-c57bd.appspot.com',
+    androidClientId:
+        '293477612420-22ip8v1q5jnnou8i7pe4kb71ln2erqnt.apps.googleusercontent.com',
     iosBundleId: 'com.example.icanTo',
   );
 

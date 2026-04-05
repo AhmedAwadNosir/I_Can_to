@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'package:ican_to/core/utils/app_images.dart';
 import 'package:ican_to/features/aboutUs/widgets/custom_question_section.dart';
 
 class AboutProgramViewBody extends StatelessWidget {
@@ -15,7 +17,7 @@ class AboutProgramViewBody extends StatelessWidget {
             width: 100,
             child: Image(
               image: AssetImage(
-                "assets/images/logo1 1.png",
+                AppImages.appLogo,
               ),
               fit: BoxFit.scaleDown,
             )),

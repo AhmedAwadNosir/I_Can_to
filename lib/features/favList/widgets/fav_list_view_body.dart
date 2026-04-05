@@ -1,32 +1,43 @@
 import 'package:flutter/material.dart';
+
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ican_to/core/utils/app_images.dart';
-import 'package:ican_to/features/favList/data/models/translated_item_model.dart';
+import 'package:ican_to/features/Home/data/models/translated_item_model.dart';
+import 'package:ican_to/features/favList/manager/cubit/fetch_favorit_list_cubit.dart';
+
 import 'package:ican_to/features/favList/widgets/fav_list_view_builder.dart';
 
-class FavListViewBody extends StatelessWidget {
+class FavListViewBody extends StatefulWidget {
   const FavListViewBody({
     super.key,
+    required this.favList,
   });
+  final List<TranslatedItemModel> favList;
+  @override
+  State<FavListViewBody> createState() => _FavListViewBodyState();
+}
 
+class _FavListViewBodyState extends State<FavListViewBody> {
+  @override
   @override
   Widget build(BuildContext context) {
-    List<TranslatedItemModel> favList = [
-      // TranslatedItemModel(
-      //     translationImage: "assets/images/signex 1.png",
-      //     translationText: "Hello",
-      //     date: "1-1-2025",
-      //     translationType: "From Sign Language"),
-      // TranslatedItemModel(
-      //     translationImage: "assets/images/signex 1.png",
-      //     translationText: "Hello",
-      //     date: "1-1-2025",
-      //     translationType: "From Sign Language"),
-      // TranslatedItemModel(
-      //     translationImage: "assets/images/signex 1.png",
-      //     translationText: "Hello",
-      //     date: "1-1-2025",
-      //     translationType: "From Sign Language"),
-    ];
+    //[
+    //   // TranslatedItemModel(
+    //   //     translationImage: "assets/images/signex 1.png",
+    //   //     translationText: "Hello",
+    //   //     date: "1-1-2025",
+    //   //     translationType: "From Sign Language"),
+    //   // TranslatedItemModel(
+    //   //     translationImage: "assets/images/signex 1.png",
+    //   //     translationText: "Hello",
+    //   //     date: "1-1-2025",
+    //   //     translationType: "From Sign Language"),
+    //   // TranslatedItemModel(
+    //   //     translationImage: "assets/images/signex 1.png",
+    //   //     translationText: "Hello",
+    //   //     date: "1-1-2025",
+    //   //     translationType: "From Sign Language"),
+    // ];
     return Column(
       children: [
         const SizedBox(
@@ -66,7 +77,7 @@ class FavListViewBody extends StatelessWidget {
             ],
           ),
         ),
-        FavListViewBuilder(favList: favList),
+        FavListViewBuilder(favList: widget.favList),
       ],
     );
   }

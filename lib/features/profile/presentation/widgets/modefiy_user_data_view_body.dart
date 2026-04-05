@@ -10,12 +10,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ican_to/features/Authentication/data/Models/user_data_model.dart';
-import 'package:ican_to/features/Authentication/functions/show_snack_bar.dart';
-import 'package:ican_to/features/profile/functions/update_user_data.dart';
 import 'package:ican_to/features/profile/functions/upload_user_profile_photo.dart';
 import 'package:ican_to/features/profile/states_mangaer/update_user_datra/update_userdata_cubit.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class ModefiyUserDataViewBody extends StatefulWidget {
   const ModefiyUserDataViewBody({super.key, required this.userData});

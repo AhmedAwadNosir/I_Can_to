@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ican_to/core/utils/app_images.dart';
 
-import 'package:ican_to/features/favList/data/models/translated_item_model.dart';
+import 'package:ican_to/features/Home/data/models/translated_item_model.dart';
 import 'package:ican_to/features/favList/widgets/translated_item.dart';
 
-class FavListViewBuilder extends StatelessWidget {
+class FavListViewBuilder extends StatefulWidget {
   const FavListViewBuilder({
     super.key,
     required this.favList,
@@ -13,8 +13,13 @@ class FavListViewBuilder extends StatelessWidget {
   final List<TranslatedItemModel> favList;
 
   @override
+  State<FavListViewBuilder> createState() => _FavListViewBuilderState();
+}
+
+class _FavListViewBuilderState extends State<FavListViewBuilder> {
+  @override
   Widget build(BuildContext context) {
-    return favList.isEmpty
+    return widget.favList.isEmpty
         ? Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -62,9 +67,10 @@ class FavListViewBuilder extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(12.0),
               child: ListView.builder(
-                itemCount: favList.length,
+                itemCount: widget.favList.length,
                 itemBuilder: (context, index) {
-                  return TranlatedItem(translatedItemModel: favList[index]);
+                  return TranlatedItem(
+                      translatedItemModel: widget.favList[index]);
                 },
               ),
             ),
