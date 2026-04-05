@@ -8,11 +8,7 @@ import 'package:ican_to/core/widgets/custom_app_barr.dart';
 import 'package:ican_to/features/Authentication/presentation/Sign_IN/Widgets/sign_in_view_body_block_consumer.dart';
 import 'package:ican_to/features/Authentication/states_manager/Cubits/SignIn/sign_in_cubit.dart';
 
-<<<<<<< HEAD
-import 'package:ican_to/features/Home/views/home_view.dart';
-=======
 import 'package:ican_to/features/Home/presintation/views/home_view.dart';
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SignInView extends StatelessWidget {

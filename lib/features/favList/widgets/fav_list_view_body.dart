@@ -1,34 +1,5 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-import 'package:ican_to/core/utils/app_images.dart';
-import 'package:ican_to/features/favList/data/models/translated_item_model.dart';
-import 'package:ican_to/features/favList/widgets/fav_list_view_builder.dart';
 
-class FavListViewBody extends StatelessWidget {
-  const FavListViewBody({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    List<TranslatedItemModel> favList = [
-      // TranslatedItemModel(
-      //     translationImage: "assets/images/signex 1.png",
-      //     translationText: "Hello",
-      //     date: "1-1-2025",
-      //     translationType: "From Sign Language"),
-      // TranslatedItemModel(
-      //     translationImage: "assets/images/signex 1.png",
-      //     translationText: "Hello",
-      //     date: "1-1-2025",
-      //     translationType: "From Sign Language"),
-      // TranslatedItemModel(
-      //     translationImage: "assets/images/signex 1.png",
-      //     translationText: "Hello",
-      //     date: "1-1-2025",
-      //     translationType: "From Sign Language"),
-    ];
-=======
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ican_to/core/utils/app_images.dart';
 import 'package:ican_to/features/Home/data/models/translated_item_model.dart';
@@ -67,7 +38,6 @@ class _FavListViewBodyState extends State<FavListViewBody> {
     //   //     date: "1-1-2025",
     //   //     translationType: "From Sign Language"),
     // ];
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
     return Column(
       children: [
         const SizedBox(
@@ -107,11 +77,7 @@ class _FavListViewBodyState extends State<FavListViewBody> {
             ],
           ),
         ),
-<<<<<<< HEAD
-        FavListViewBuilder(favList: favList),
-=======
         FavListViewBuilder(favList: widget.favList),
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
       ],
     );
   }

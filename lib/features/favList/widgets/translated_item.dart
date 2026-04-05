@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import 'package:flutter/material.dart';
-import 'package:ican_to/features/favList/data/models/translated_item_model.dart';
-=======
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -9,7 +5,6 @@ import 'package:ican_to/features/Home/data/models/translated_item_model.dart';
 import 'package:ican_to/features/Home/manager/cubit/delet_item_form_fav_list_cubit.dart';
 import 'package:ican_to/features/Home/presintation/functions/convert_en_to_ar.dart';
 import 'package:ican_to/features/favList/manager/cubit/fetch_favorit_list_cubit.dart';
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 
 class TranlatedItem extends StatelessWidget {
   const TranlatedItem({
@@ -37,18 +32,6 @@ class TranlatedItem extends StatelessWidget {
                 width: 20,
               ),
               SizedBox(
-<<<<<<< HEAD
-                  height: MediaQuery.of(context).size.width * 0.2,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  child: ClipOval(
-                    child: Image(
-                      image: AssetImage(
-                        translatedItemModel.translationImage,
-                      ),
-                      fit: BoxFit.fill,
-                    ),
-                  )),
-=======
                 height: MediaQuery.of(context).size.width * 0.2,
                 width: MediaQuery.of(context).size.width * 0.2,
                 child: ClipOval(
@@ -58,18 +41,13 @@ class TranlatedItem extends StatelessWidget {
                   ),
                 ),
               ),
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
               const SizedBox(
                 width: 20,
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-<<<<<<< HEAD
-                  translatedItemModel.translationText,
-=======
                   convertingEnToAr(translatedItemModel.translationText),
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
                   style: const TextStyle(
                       fontSize: 22, fontWeight: FontWeight.w500),
                 ),
@@ -77,12 +55,6 @@ class TranlatedItem extends StatelessWidget {
               const Spacer(),
               Column(
                 children: [
-<<<<<<< HEAD
-                  const Padding(
-                    padding: EdgeInsets.only(right: 16),
-                    child: InkWell(
-                      child: Icon(
-=======
                   Padding(
                     padding: const EdgeInsets.only(right: 16),
                     child: InkWell(
@@ -92,7 +64,6 @@ class TranlatedItem extends StatelessWidget {
                                 translatedItemModel.translationImage);
                       },
                       child: const Icon(
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
                         Icons.delete,
                         size: 55,
                         color: Color.fromARGB(255, 105, 150, 235),

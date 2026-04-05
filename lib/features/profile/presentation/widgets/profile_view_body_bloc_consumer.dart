@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-import 'package:firebase_auth/firebase_auth.dart';
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ican_to/features/Authentication/data/Models/user_data_model.dart';

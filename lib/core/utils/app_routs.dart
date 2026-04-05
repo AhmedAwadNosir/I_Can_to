@@ -6,16 +6,9 @@ import 'package:ican_to/features/Authentication/presentation/forgot%20_password/
 import 'package:ican_to/features/Authentication/presentation/forgot%20_password/views/forgot_password_view.dart';
 import 'package:ican_to/features/Authentication/presentation/forgot%20_password/views/password_reset_successfully_view.dart';
 import 'package:ican_to/features/Authentication/presentation/forgot%20_password/views/reset_password_view.dart';
-
-<<<<<<< HEAD
 import 'package:ican_to/features/Home/views/from_sign_language_view.dart';
 import 'package:ican_to/features/Home/views/home_view.dart';
 import 'package:ican_to/features/Home/views/to_sign_language_view.dart';
-=======
-import 'package:ican_to/features/Home/presintation/views/from_sign_language_view.dart';
-import 'package:ican_to/features/Home/presintation/views/home_view.dart';
-import 'package:ican_to/features/Home/presintation/views/to_sign_language_view.dart';
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 import 'package:ican_to/features/Onboarding/presentation/Views/onboarding_view.dart';
 import 'package:ican_to/features/Onboarding/presentation/Views/splash_view.dart';
 import 'package:ican_to/features/aboutUs/views/about_developers_view.dart';

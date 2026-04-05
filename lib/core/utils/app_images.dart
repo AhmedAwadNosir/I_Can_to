@@ -27,8 +27,5 @@ abstract class AppImages {
       "lib/core/utils/assets/images/upload-icon.png";
   static const String profileBackgroun =
       "lib/core/utils/assets/images/profileBackgroun1.jpg";
-<<<<<<< HEAD
-=======
   static const String noUser = "lib/core/utils/assets/images/noUser.jpg";
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 }

@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import 'package:flutter/material.dart';
-import 'package:ican_to/features/favList/widgets/fav_list_view_body.dart';
-
-class FavListView extends StatelessWidget {
-  const FavListView({super.key});
-
-  @override
-=======
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -30,7 +21,6 @@ class _FavListViewState extends State<FavListView> {
   }
 
   @override
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -39,9 +29,6 @@ class _FavListViewState extends State<FavListView> {
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
         ),
       ),
-<<<<<<< HEAD
-      body: const FavListViewBody(),
-=======
       body: BlocProvider(
         create: (context) => DeletItemFormFavListCubit(),
         child: BlocConsumer<FetchFavoritListCubit, FetchFavoritListState>(
@@ -83,7 +70,6 @@ class _FavListViewState extends State<FavListView> {
           },
         ),
       ),
->>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
     );
   }
 }
