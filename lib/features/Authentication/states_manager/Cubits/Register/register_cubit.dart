@@ -1,12 +1,18 @@
 import 'package:bloc/bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:ican_to/features/Authentication/data/Models/user_data_model.dart';
+<<<<<<< HEAD
 import 'package:ican_to/features/Authentication/functions/sign_in_with_facebook.dart';
+=======
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 import 'package:ican_to/features/Authentication/functions/sign_in_with_google.dart';
 import 'package:ican_to/features/Authentication/functions/store_user_data.dart';
 // ignore: depend_on_referenced_packages
 import 'package:meta/meta.dart';
+<<<<<<< HEAD
 
+=======
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 part 'register_state.dart';
 
 class RegisterCubit extends Cubit<RegisterState> {

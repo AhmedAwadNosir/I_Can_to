@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:ican_to/features/Authentication/presentation/Widgets/page_initail_info.dart';
 import 'package:ican_to/features/Authentication/presentation/Widgets/user_instractions.dart';
 import 'package:ican_to/features/Authentication/presentation/forgot%20_password/functions/send_reset_password_email.dart';
+<<<<<<< HEAD
 import 'package:ican_to/features/Authentication/presentation/forgot%20_password/views/check_emial_view.dart';
+=======
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 import 'package:iconsax/iconsax.dart';
 import '../../../../../Core/Utils/app_colors.dart';
 import '../../../../Onboarding/presentation/Widgets/custom_button.dart';

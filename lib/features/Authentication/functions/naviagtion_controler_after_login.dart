@@ -7,7 +7,11 @@ import 'package:flutter/material.dart';
 import 'package:ican_to/core/utils/constans.dart';
 import 'package:ican_to/features/Authentication/functions/show_snack_bar.dart';
 import 'package:ican_to/features/Authentication/presentation/Sign_IN/Views/complet_and_store_user_data_view.dart';
+<<<<<<< HEAD
 import 'package:ican_to/features/Home/views/home_view.dart';
+=======
+import 'package:ican_to/features/Home/presintation/views/home_view.dart';
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 
 void navigationControler(
     BuildContext context, UserCredential credintial) async {

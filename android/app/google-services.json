@@ -12,7 +12,24 @@
           "package_name": "com.example.ican_to"
         }
       },
+<<<<<<< HEAD
       "oauth_client": [],
+=======
+      "oauth_client": [
+        {
+          "client_id": "293477612420-22ip8v1q5jnnou8i7pe4kb71ln2erqnt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ican_to",
+            "certificate_hash": "1f777ddf48bccee584b1751f6df12e027ed1db9a"
+          }
+        },
+        {
+          "client_id": "293477612420-vgbh88anj33vt7jh5boncpioo005b03h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
       "api_key": [
         {
           "current_key": "AIzaSyBcCLBnUZ66BpInGUV5lvtH3QQFntgGFB8"
@@ -20,7 +37,16 @@
       ],
       "services": {
         "appinvite_service": {
+<<<<<<< HEAD
           "other_platform_oauth_client": []
+=======
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293477612420-vgbh88anj33vt7jh5boncpioo005b03h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
         }
       }
     }

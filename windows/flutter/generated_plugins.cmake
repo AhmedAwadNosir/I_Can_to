@@ -8,6 +8,10 @@ list(APPEND FLUTTER_PLUGIN_LIST
   firebase_auth
   firebase_core
   firebase_storage
+<<<<<<< HEAD
+=======
+  flutter_inappwebview_windows
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
   flutter_secure_storage_windows
   url_launcher_windows
 )

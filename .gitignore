@@ -5,9 +5,17 @@
 *.swp
 .DS_Store
 .atom/
+<<<<<<< HEAD
 .buildlog/
 .history
 .svn/
+=======
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 migrate_working_dir/
 
 # IntelliJ related
@@ -25,11 +33,18 @@ migrate_working_dir/
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+<<<<<<< HEAD
 .flutter-plugins
+=======
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
 /build/
+<<<<<<< HEAD
+=======
+/coverage/
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 
 # Symbolication related
 app.*.symbols

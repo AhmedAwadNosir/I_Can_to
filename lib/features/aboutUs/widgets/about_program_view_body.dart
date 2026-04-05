@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+=======
+import 'package:ican_to/core/utils/app_images.dart';
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 import 'package:ican_to/features/aboutUs/widgets/custom_question_section.dart';
 
 class AboutProgramViewBody extends StatelessWidget {
@@ -15,7 +19,11 @@ class AboutProgramViewBody extends StatelessWidget {
             width: 100,
             child: Image(
               image: AssetImage(
+<<<<<<< HEAD
                 "assets/images/logo1 1.png",
+=======
+                AppImages.appLogo,
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
               ),
               fit: BoxFit.scaleDown,
             )),

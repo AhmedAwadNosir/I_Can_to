@@ -1,4 +1,5 @@
 import 'dart:developer';
+<<<<<<< HEAD
 
 import 'package:bloc/bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -10,6 +11,14 @@ import 'package:ican_to/features/Authentication/functions/get_email.dart';
 import 'package:ican_to/features/Authentication/functions/sign_in_with_facebook.dart';
 import 'package:ican_to/features/Authentication/functions/sign_in_with_google.dart';
 import 'package:ican_to/features/Authentication/functions/store_user_data.dart';
+=======
+import 'package:bloc/bloc.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:ican_to/core/utils/constans.dart';
+import 'package:ican_to/features/Authentication/functions/fetch_user_data.dart';
+import 'package:ican_to/features/Authentication/functions/get_email.dart';
+import 'package:ican_to/features/Authentication/functions/sign_in_with_google.dart';
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 // ignore: depend_on_referenced_packages
 import 'package:meta/meta.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -69,6 +78,10 @@ class SignInCubit extends Cubit<SignInState> {
       emit(SignInFailure("Error happend with googl sign in try Again Later"));
     }
   }
+<<<<<<< HEAD
+=======
+}
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 
   // Future signInFacebook() async {
   //   emit(SignInLoading());
@@ -82,4 +95,8 @@ class SignInCubit extends Cubit<SignInState> {
   //     emit(SignInFailure("'ERROR_FACEBOOK_LOGIN_FAILED try Agian later'"));
   //   }
   // }
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)

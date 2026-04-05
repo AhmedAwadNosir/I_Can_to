@@ -59,6 +59,10 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
+<<<<<<< HEAD
+=======
+      enableGPUValidationMode = "1"
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">

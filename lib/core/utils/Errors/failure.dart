@@ -17,8 +17,12 @@ class ServerFailure extends Failure {
       case DioExceptionType.receiveTimeout:
         return ServerFailure("Recive time out with ApiServer");
       case DioExceptionType.badCertificate:
+<<<<<<< HEAD
         return ServerFailure(
             "An error occurred while establishing a secure connection Please try Later!.");
+=======
+        return ServerFailure(dioError.message.toString());
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
       case DioExceptionType.badResponse:
         return ServerFailure.fromBadResponse(dioError.response!
             .statusCode!); //ServerFailure.fromBadResponse(dioError.response!.statusCode!);

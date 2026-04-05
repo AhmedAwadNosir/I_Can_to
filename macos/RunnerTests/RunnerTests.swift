@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import FlutterMacOS
 import Cocoa
+=======
+import Cocoa
+import FlutterMacOS
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 import XCTest
 
 class RunnerTests: XCTestCase {

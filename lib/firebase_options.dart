@@ -63,6 +63,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '293477612420',
     projectId: 'icanto-c57bd',
     storageBucket: 'icanto-c57bd.appspot.com',
+<<<<<<< HEAD
+=======
+    androidClientId: '293477612420-22ip8v1q5jnnou8i7pe4kb71ln2erqnt.apps.googleusercontent.com',
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
     iosBundleId: 'com.example.icanTo',
   );
 
@@ -72,6 +76,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '293477612420',
     projectId: 'icanto-c57bd',
     storageBucket: 'icanto-c57bd.appspot.com',
+<<<<<<< HEAD
+=======
+    androidClientId: '293477612420-22ip8v1q5jnnou8i7pe4kb71ln2erqnt.apps.googleusercontent.com',
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
     iosBundleId: 'com.example.icanTo',
   );
 
@@ -83,4 +91,9 @@ class DefaultFirebaseOptions {
     authDomain: 'icanto-c57bd.firebaseapp.com',
     storageBucket: 'icanto-c57bd.appspot.com',
   );
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)

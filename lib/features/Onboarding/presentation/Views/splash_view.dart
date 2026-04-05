@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:ican_to/core/Utils/app_images.dart';
 import 'package:ican_to/features/Authentication/presentation/Sign_IN/Views/sign_in_view.dart';
+<<<<<<< HEAD
 import 'package:ican_to/features/Home/views/home_view.dart';
+=======
+import 'package:ican_to/features/Home/presintation/views/home_view.dart';
+>>>>>>> f0e6fff (Update project with new version when modify repostry redmi)
 import 'package:ican_to/features/Onboarding/presentation/Views/onboarding_view.dart';
 import 'package:ican_to/main.dart';
 import '../../functions/splash_navigation_controler.dart';
